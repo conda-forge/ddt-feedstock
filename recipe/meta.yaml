@@ -1,6 +1,6 @@
 {% set name = "ddt" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "e8042693d9e8b9fb9c844b0541650f54134e3a9b0a9878c92dd6f8b0f2bc6ba3" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "caedf4ee487968f064af9b030fc4c861100f00fe8b3e6f11d66468f22cb30b51" %}
 {% set repo = "txels" %}
 
 package:
