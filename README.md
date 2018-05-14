@@ -14,14 +14,16 @@ DDT (Data-Driven Tests) allows you to multiply one test case by running it with 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ddt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ddt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ddt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ddt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ddt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ddt-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ddt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ddt-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/ddt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ddt-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ddt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ddt-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ddt/badges/version.svg)](https://anaconda.org/conda-forge/ddt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ddt/badges/downloads.svg)](https://anaconda.org/conda-forge/ddt)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ddt-green.svg)](https://anaconda.org/conda-forge/ddt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ddt.svg)](https://anaconda.org/conda-forge/ddt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ddt.svg)](https://anaconda.org/conda-forge/ddt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ddt.svg)](https://anaconda.org/conda-forge/ddt) |
 
 Installing ddt
 ==============
