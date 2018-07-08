@@ -14,9 +14,8 @@ DDT (Data-Driven Tests) allows you to multiply one test case by running it with 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ddt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ddt-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/ddt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ddt-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ddt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ddt-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ddt-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ddt-feedstock)
 
 Current release info
 ====================
