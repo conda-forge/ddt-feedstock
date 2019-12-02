@@ -1,6 +1,6 @@
 {% set name = "ddt" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "7914875d59fccc5b8c944e0c0864d9145f3b48b948566e407d39fae04265e192" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "864996d510e96f6ee0c5dfe9a16622a2da732b8581aef02754092d6e380caa0e" %}
 {% set repo = "txels" %}
 
 package:
@@ -15,7 +15,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
