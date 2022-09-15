@@ -30,7 +30,7 @@ test:
     - test/*
   commands:
     - pip check
-    - pytest test --cov=ddt --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
+    - pytest test -vv --cov=ddt --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=97
 
 about:
   home: https://github.com/datadriventests/ddt
