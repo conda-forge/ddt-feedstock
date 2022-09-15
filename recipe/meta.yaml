@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: DDT (Data-Driven Tests) allows you to multiply one test case by running it with different test data, and make it appear as multiple test cases.
+  summary: Data-Driven/Decorated Tests
   description: DDT (Data-Driven Tests) allows you to multiply one test case by running it with different test data, and make it appear as multiple test cases.
   doc_url: https://ddt.readthedocs.io
 
