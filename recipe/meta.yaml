@@ -1,16 +1,12 @@
-{% set name = "ddt" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "b0556d50438c2e0733e73bb5d63147027ef3b5df844ce5824b97b65a3911b3ce" %}
-{% set repo = "txels" %}
+{% set version = "1.6.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: ddt
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/{{ repo }}/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/d/ddt/ddt-{{ version }}.tar.gz
+  sha256: f71b348731b8c78c3100bffbd951a769fbd439088d1fdbb3841eee019af80acd
 
 build:
   noarch: python
@@ -20,34 +16,32 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=3.7
   run:
-    - python
+    - python >=3.7
 
 test:
   requires:
-    - flake8
-    - nose
+    - pip
+    - pytest-cov
     - six >=1.4.0
     - pyyaml
-    - mock
-    - pytest
   source_files:
     - test/*
   commands:
-    - py.test
+    - pip check
+    - pytest test --cov=ddt --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
 
 about:
-  home: https://github.com/txels/ddt
+  home: https://github.com/datadriventests/ddt
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
   summary: DDT (Data-Driven Tests) allows you to multiply one test case by running it with different test data, and make it appear as multiple test cases.
   description: DDT (Data-Driven Tests) allows you to multiply one test case by running it with different test data, and make it appear as multiple test cases.
-  doc_url: http://ddt.readthedocs.io/en/latest/
-  dev_url: https://github.com/txels/ddt
+  doc_url: https://ddt.readthedocs.io
 
 extra:
   recipe-maintainers:
     - CJ-Wright
+    - bollwyvl
