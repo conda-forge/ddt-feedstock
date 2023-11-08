@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -22,15 +22,16 @@ requirements:
 
 test:
   requires:
+    - aiounittest >=1.4.0
     - pip
     - pytest-cov
-    - six >=1.4.0
     - pyyaml
+    - six >=1.4.0
   source_files:
     - test/*
   commands:
     - pip check
-    - pytest test -vv --cov=ddt --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=97
+    - pytest test -vv --cov=ddt --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=97
 
 about:
   home: https://github.com/datadriventests/ddt
