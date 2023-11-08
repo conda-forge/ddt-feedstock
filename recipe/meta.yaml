@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: ddt
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/ddt/ddt-{{ version }}.tar.gz
-  sha256: f71b348731b8c78c3100bffbd951a769fbd439088d1fdbb3841eee019af80acd
+  sha256: d178d115abf25a1b8327e94f85a03ef09b1d7b0ca256f6203284b024f2fc70df
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -22,15 +22,16 @@ requirements:
 
 test:
   requires:
+    - aiounittest >=1.4.0
     - pip
     - pytest-cov
-    - six >=1.4.0
     - pyyaml
+    - six >=1.4.0
   source_files:
     - test/*
   commands:
     - pip check
-    - pytest test -vv --cov=ddt --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under=97
+    - pytest test -vv --cov=ddt --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=97
 
 about:
   home: https://github.com/datadriventests/ddt
