@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 
 package:
   name: ddt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/ddt/ddt-{{ version }}.tar.gz
-  sha256: 1a4472c477bf766f75f7b1efb628656ff3c35ff3f6c821129ae8e328fff8a9a2
+  sha256: d215d6b083963013c4a19b1e4dcd6a96e80e43ab77519597a6acfcf2e9a3e04b
 
 build:
   noarch: python
